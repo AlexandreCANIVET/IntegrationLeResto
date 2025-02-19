@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Allura";
+  src: url(../fonts/Allura/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(32, 32, 32);
+  color: rgb(238, 238, 238);
+  font-family: Roboto, cursive;
+}
+
+.title > span:nth-child(1) {
+  font-family: Allura;
+  color: rgb(166, 114, 69);
+}
+.title > span:nth-child(3) {
+  text-transform: uppercase;
+  font-family: Poppins, serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  height: 100dvh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header nav {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  padding-top: 30px;
+}
+header nav h2 {
+  font-family: Allura, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+header nav .navbar {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: rgb(238, 238, 238);
+  font-weight: 300;
+}
+header nav a {
+  color: rgb(238, 238, 238);
+}
+header nav .navbar-social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 10%;
+  font-weight: 300;
+}
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+header .header-container h1 {
+  text-align: center;
+  line-height: 50px;
+}
+header .header-container h1 > span:first-child {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+header .header-container h1 > span:last-child {
+  font-size: 3.5rem;
+  letter-spacing: 8px;
+}
+header .header-container p {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300;
+}/*# sourceMappingURL=index.css.map */
