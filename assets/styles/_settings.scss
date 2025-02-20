@@ -28,6 +28,7 @@ $color1: rgb(166, 114, 69);
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -37,6 +38,7 @@ body{
 }
 
 .title{
+    text-align: center;
     >span:nth-child(1){
        font-family: Allura;
        color: $color1;
@@ -44,6 +46,15 @@ body{
     >span:nth-child(3){
         text-transform: uppercase;
         font-family: $font2;
+    }
+}
+
+h3{
+    font-size: 1.5rem;
+    line-height: 25px;
+    >span:nth-child(1){
+        font-size: 2rem;
+        font-weight: 400;
     }
 }
 

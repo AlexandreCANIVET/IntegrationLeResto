@@ -1,0 +1,41 @@
+.discover{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .left-part{
+        background: $white1;
+        padding: 30px;
+        color: $black1;
+        text-align: center;
+        @include center;
+        
+        .left-part-container{
+            border: 2px dashed $color1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 10px;
+            gap: 30px;
+
+            #chef-cook{
+                border-radius: 50%;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+
+            h4{
+                letter-spacing: 1px;
+                font-size: 1.2rem;
+            }
+            h6{
+                color: rgba(128, 128, 128, 0.5);
+                font-size: 0.8rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .right-part{
+        background: url(../img/store-01.jpg) bottom/cover;
+    }
+}
