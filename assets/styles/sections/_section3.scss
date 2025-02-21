@@ -1,0 +1,117 @@
+.event{
+    width: 70%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    .event-container{
+        text-align: center;
+
+        .title{
+            line-height: 30px;
+        }
+        img{
+            margin: 20px 0;
+        }
+        .news{
+            display: grid;
+            grid-template-columns: 55% 45%;
+            gap: 15px;
+
+
+            .news-left-part{
+                display: grid;
+                gap: 15px;
+                .new{
+                    display: grid;
+                    grid-template-columns: 40% 60%;
+                   
+
+                    .left-new{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .container{
+                            background: $black1;
+                            padding: 15px 20px;
+                        }
+                    }
+
+                    &:first-child{
+                        .left-new{
+                            background: url(../img/event-01.jpg)center/cover;
+                        }
+                    }
+                    &:nth-child(2){
+                        .left-new{
+                            background: url(../img/event-02.jpg)center/cover;
+                        }
+                    }
+                    .right-new{
+                        background: $white1;
+                        @include center;
+                        text-align: left;
+                        padding: 20px 0;
+                        .container{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+                            padding: 0 10px;
+
+                        }
+                    }
+                }
+            }
+            .news-right-part{
+                background: url(../img/event-03.jpg) right/cover;
+                @include center;
+
+                .right-new-container{
+                    background: $white1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 90%;
+                    width: 90%;
+                   
+
+                    .span-container{
+                        background: $black1;
+                        padding: 15px 20px;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}
+
+// GENEREAL TEXT STYLE
+
+.event{
+    .container{
+        p:nth-child(1){
+            font-size: 1.4rem;
+        }
+        p:nth-child(2){
+            font-size: 0.9rem;
+        }
+    }
+    h5{
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: $black1;
+    }
+    .date{
+        color: rgba(128, 128, 128, 0.5);
+    }
+    a{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        color: $black1;
+        padding-bottom: 30px;
+    }
+}

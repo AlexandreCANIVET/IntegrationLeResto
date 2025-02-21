@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Allura";
   src: url(../fonts/Allura/Allura-Regular.ttf);
@@ -42,6 +43,9 @@ h3 {
 h3 > span:nth-child(1) {
   font-size: 2rem;
   font-weight: 400;
+}
+h3 > span:nth-child(3) {
+  letter-spacing: 1px;
 }
 
 ul {
@@ -289,4 +293,396 @@ main .background-container {
   width: 100%;
   height: 67%;
   z-index: -1;
+}
+
+.online-booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1300px;
+  width: 75%;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.online-booking .left-part {
+  background: black;
+  padding: 20px;
+}
+.online-booking .left-part .left-part-container {
+  border: 1px dashed rgb(238, 238, 238);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+.online-booking .left-part .left-part-container .title > span:nth-child(3) {
+  letter-spacing: 2px;
+}
+.online-booking .left-part .left-part-container h5 {
+  text-transform: uppercase;
+  color: rgb(166, 114, 69);
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.online-booking .right-part {
+  background: rgb(238, 238, 238);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.online-booking .right-part .right-part-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.online-booking .right-part .right-part-container .title {
+  line-height: 35px;
+}
+.online-booking .right-part .right-part-container .title > span:nth-child(1) {
+  font-size: 2.5rem;
+}
+.online-booking .right-part .right-part-container .title > span:nth-child(3) {
+  font-size: 1.7rem;
+  color: rgb(32, 32, 32);
+  letter-spacing: 1px;
+}
+.online-booking .right-part .right-part-container form .form-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.online-booking .right-part .right-part-container form .form-container select, .online-booking .right-part .right-part-container form .form-container input {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+.online-booking .right-part .right-part-container form input[type=submit] {
+  background: black;
+  color: rgb(238, 238, 238);
+  display: block;
+  margin: 30px auto 0;
+  text-transform: uppercase;
+  font-family: Roboto, cursive;
+  font-size: 1rem;
+  padding: 15px 25px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  border-radius: 35px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border: none;
+}
+.online-booking .right-part .right-part-container form input[type=submit]:hover {
+  color: rgb(166, 114, 69);
+}
+
+.event {
+  width: 70%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.event .event-container {
+  text-align: center;
+}
+.event .event-container .title {
+  line-height: 30px;
+}
+.event .event-container img {
+  margin: 20px 0;
+}
+.event .event-container .news {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 15px;
+}
+.event .event-container .news .news-left-part {
+  display: grid;
+  gap: 15px;
+}
+.event .event-container .news .news-left-part .new {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.event .event-container .news .news-left-part .new .left-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.event .event-container .news .news-left-part .new .left-new .container {
+  background: rgb(32, 32, 32);
+  padding: 15px 20px;
+}
+.event .event-container .news .news-left-part .new:first-child .left-new {
+  background: url(../img/event-01.jpg) center/cover;
+}
+.event .event-container .news .news-left-part .new:nth-child(2) .left-new {
+  background: url(../img/event-02.jpg) center/cover;
+}
+.event .event-container .news .news-left-part .new .right-new {
+  background: rgb(238, 238, 238);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  padding: 20px 0;
+}
+.event .event-container .news .news-left-part .new .right-new .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding: 0 10px;
+}
+.event .event-container .news .news-right-part {
+  background: url(../img/event-03.jpg) right/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.event .event-container .news .news-right-part .right-new-container {
+  background: rgb(238, 238, 238);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90%;
+  width: 90%;
+}
+.event .event-container .news .news-right-part .right-new-container .span-container {
+  background: rgb(32, 32, 32);
+  padding: 15px 20px;
+}
+
+.event .container p:nth-child(1) {
+  font-size: 1.4rem;
+}
+.event .container p:nth-child(2) {
+  font-size: 0.9rem;
+}
+.event h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgb(32, 32, 32);
+}
+.event .date {
+  color: rgba(128, 128, 128, 0.5);
+}
+.event a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  color: rgb(32, 32, 32);
+  padding-bottom: 30px;
+}
+
+.testimony {
+  padding: 150px 0 200px;
+  position: relative;
+}
+.testimony .container {
+  margin: 0 auto;
+  padding: 70px 50px;
+  width: 70%;
+  background: rgb(238, 238, 238);
+  color: rgb(32, 32, 32);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.testimony .container img {
+  position: absolute;
+  height: 75px;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.testimony .container p {
+  line-height: 30px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.testimony .container p::before {
+  content: "❝";
+  font-size: 1.3rem;
+}
+.testimony .container p::after {
+  content: "❞";
+  font-size: 1.3rem;
+}
+.testimony .container h4 {
+  font-size: 1.4rem;
+}
+.testimony .container h6 {
+  color: rgb(166, 114, 69);
+  font-size: 0.9rem;
+}
+.testimony .background-container {
+  background: url(../img/gmap.jpg) left/cover;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  z-index: -1;
+}
+
+footer {
+  background: url(../img/bg-footer.jpg) center/cover;
+}
+footer .footer-container {
+  padding: 50px 0;
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer .footer-container .footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  margin-right: 30px;
+}
+footer .footer-container .footer-left p {
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+footer .footer-container .footer-right {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 30px;
+}
+footer .footer-container .footer-right .footer-title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+footer .footer-container .footer-right .newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+footer .footer-container .footer-right .newsletter input[type=email] {
+  background: none;
+  outline: none;
+  border: 1px solid rgba(166, 114, 69, 0.3);
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+}
+footer .footer-container .footer-right .follow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer-container .footer-right .follow ul {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }/*# sourceMappingURL=index.css.map */
