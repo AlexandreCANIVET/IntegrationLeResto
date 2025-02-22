@@ -5,10 +5,22 @@
     margin: 80px auto;
     display: grid;
     grid-template-columns: 30% 70%;
+    @media screen and (max-width: 1100px) {
+        width: 90%;
+    }
+    @media screen and (max-width: 870px) {
+        grid-template-columns: 45% 55%;
+    }
+    @media screen and (max-width: 688px) {
+        display: block;
+    }
 
     .left-part{
         background: black;
         padding: 20px;
+        @media screen and (max-width: 870px) {
+           height: 100%;
+        }
 
         .left-part-container{
             border: 1px dashed $white1;
@@ -18,6 +30,10 @@
             align-items: center;
             text-align: center;
             padding: 30px;
+            @media screen and (max-width: 870px) {
+                justify-content: center;
+                height: 100%;
+            }
 
             .title{
                 >span:nth-child(3){
@@ -39,12 +55,18 @@
         background: $white1;
         height: 100%;
         @include center;
+        @media screen and (max-width: 870px) {
+            padding: 30px 0;
+        }
 
         .right-part-container{
             display: flex;
             gap: 30px;
             flex-direction: column;
             align-items: center;
+            @media screen and (max-width: 770px) {
+                width: 70%;
+            }
             .title{
                 line-height: 35px;
                 >span:nth-child(1){
@@ -57,11 +79,17 @@
                 }
             }
             form{
+                @media screen and (max-width: 770px){
+                    width: 100%;
+                } 
                 .form-container{
                     display: grid;
                     grid-template-columns: repeat(3,1fr);
                     grid-template-rows: 1fr 1fr;
                     gap: 20px;
+                    @media screen and (max-width: 870px) {
+                        grid-template-columns: 100%;
+                    }
 
                     select, input{
                         background: none;

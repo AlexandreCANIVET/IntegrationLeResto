@@ -29,6 +29,11 @@ $color1: rgb(166, 114, 69);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    &::selection{
+        background: $color1;
+        color: $white1;
+    }
 }
 
 body{
@@ -36,6 +41,7 @@ body{
    color: $white1;
    font-family: $font3;
 }
+
 
 .title{
     text-align: center;
@@ -66,4 +72,5 @@ ul{
 }
 a {
     text-decoration: none;
+    color: $white1;
 }
